@@ -1,6 +1,6 @@
-import { ArrayService } from "./app-service";
+import { StringManipulationService } from "./app-service";
 
-export class ArrayComponent implements ArrayService {
+export class ArrayManipulations implements StringManipulationService {
 
     constructor() {}
 
@@ -59,7 +59,7 @@ export class ArrayComponent implements ArrayService {
 }
 
 let myArray: number[] = [34, 45, 60, 23, 13, 25, 70];
-let array = new ArrayComponent();
+let array = new ArrayManipulations();
 
 console.log(array.arrayMultiply(myArray));
 console.log(array.arraySeparate(myArray));
